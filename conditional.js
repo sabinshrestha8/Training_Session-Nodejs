@@ -58,3 +58,15 @@ for (let i = 10; 1 >= 1; i--) {
     }
     console.log("Value of i is: ", i);
 }
+
+
+/*================ JS Dates Examples ======================*/
+const d = new Date();
+console.log(d);
+
+const custom = new Date(2021, 09, 20, 9, 0, 0);
+console.log(custom);
+
+const dString = new Date("October  13, 2014 11:13:00");
+console.log(dString);
+
