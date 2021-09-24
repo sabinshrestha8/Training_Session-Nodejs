@@ -86,12 +86,66 @@ const loopFunction = (value, index) => {
     console.log("value: ", value);
 }
 
-sliceExample.forEach(loopFunction);
+// sliceExample.forEach(loopFunction);
 
 // sliceExample.forEach((value, index) => {
 //     console.log("Key: ", index);
 //     console.log("value: ", value);
 // })
 
+/*=====================================================*/
+
+// Map example
+
+// let fruits = ['apple', 'banana', 'mango', 'avocado']
+
+let numbers = [1, 2, 3, 4, 5];
+
+let newNumbers = numbers.map((value, index) => {
+    return value * 2;
+});
+
+console.log("🚀 ~file: array_method.js ~line 101 ~numbers", numbers);
+console.log("🚀 ~file: array_method.js ~line 103 ~numbers", newNumbers);
 
 
+// filter example
+let agesArray = [15, 20, 30];
+
+let aboveTwenty = agesArray.filter((age) => {
+    return age > 20;
+});
+
+console.log("🚀 ~ file: array_method.js ~ line 113 ~ agesArray", agesArray);
+console.log("🚀 ~ file: array_method.js ~ line 116 ~ aboveTwenty ~ aboveTwenty",
+    aboveTwenty);
+
+let person = {
+    name: "john",
+    age: 30,
+    address: "kathmandu",
+}
+
+delete person.address;
+console.log("🚀 ~ file: array_method.js ~ line 129 ~ person", person);
+
+
+// iterators
+let countryArray = ["Nepal", "India", "china", "Japan"];
+
+for (let country of countryArray) {
+    console.log("file: array_method.js ~ line 136 ~ country", country);
+}
+
+let objectExample = {
+    name: "John",
+    age: 30,
+    address: "kathmandu",
+}
+
+for (let obj in objectExample) {
+    console.log("🚀 ~ file: array_method.js ~ line 146 ~ obj", objectExample[obj]);
+}
+
+// console.log(object.keys(objectExample));
+// console.log(object.values(objectExample));
