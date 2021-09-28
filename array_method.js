@@ -1,139 +1,223 @@
-// array length
-let exampleArray = [1, 2, 3, 4, 5];
-console.log(exampleArray.length);
-console.log(exampleArray[exampleArray.length - 1]);
+// // array length
+// let exampleArray = [1, 2, 3, 4, 5];
+// console.log(exampleArray.length);
+// console.log(exampleArray[exampleArray.length - 1]);
 
 
-// changing value of an array
-exampleArray[2] = "test";
-console.log(exampleArray);
+// // changing value of an array
+// exampleArray[2] = "test";
+// console.log(exampleArray);
 
 
-// concating / merging multiple arrays
-let array1 = ["apple", "mango"];
-let array2 = ["orange", "banana"];
-console.log([...array1, ...array2]);
+// // concating / merging multiple arrays
+// let array1 = ["apple", "mango"];
+// let array2 = ["orange", "banana"];
+// console.log([...array1, ...array2]);
 
 
-// concating / merging multiple objects | (Spread method)
-let object1 = {
-    name: "John",
-    age: 30,
-};
+// // concating / merging multiple objects | (Spread method)
+// let object1 = {
+//     name: "John",
+//     age: 30,
+// };
 
-let object2 = {
-    address: "Kathmandu",
-    college: "NITK",
-};
+// let object2 = {
+//     address: "Kathmandu",
+//     college: "NITK",
+// };
 
-// console.log({ ...object1, ...object2 });
-let object3 = { ...object1, ...object2 };
+// // console.log({ ...object1, ...object2 });
+// let object3 = { ...object1, ...object2 };
 
-// console.log(object1.name);
-// console.log(object1.age);
+// // console.log(object1.name);
+// // console.log(object1.age);
 
-// let { name, age, address, college }
-
-
-// push
-let pushExample = ['apple', 'mango', 'orange'];
-pushExample.push('banana');
-console.log("🚀 ~ file: array_method.js ~ line 40 ~ pushExample", pushExample);
-
-// pop
-let popExample = ['apple', 'mango', 'orange'];
-popExample.pop();
-console.log("🚀 ~ file: array_method.js ~ line 45 ~ popExample", popExample);
-
-// shift
-let shiftExample = ['apple', 'mango', 'orange', 'banana'];
-shiftExample.shift();
-// console.log(shiftExample);
-console.log("🚀 ~ file: array_method.js ~ line 50 ~ shiftExample", shiftExample);
+// // let { name, age, address, college }
 
 
-// unshift
-let unshiftExample = ['apple', 'mango', 'orange', 'banana'];
-shiftExample.unshift("avocado");
-// console.log(unshiftExample);
-console.log("🚀 ~ file: array_method.js ~ line 57 ~ unshiftExample", unshiftExample);
+// // push
+// let pushExample = ['apple', 'mango', 'orange'];
+// pushExample.push('banana');
+// console.log("🚀 ~ file: array_method.js ~ line 40 ~ pushExample", pushExample);
+
+// // pop
+// let popExample = ['apple', 'mango', 'orange'];
+// popExample.pop();
+// console.log("🚀 ~ file: array_method.js ~ line 45 ~ popExample", popExample);
+
+// // shift
+// let shiftExample = ['apple', 'mango', 'orange', 'banana'];
+// shiftExample.shift();
+// // console.log(shiftExample);
+// console.log("🚀 ~ file: array_method.js ~ line 50 ~ shiftExample", shiftExample);
 
 
-// splice
-let spliceExample = ['apple', 'mango', 'orange'];
-spliceExample.splice(1, 0, 'avocado', 'pears');
-// console.log("spliceExample:", spliceExample);
-console.log("🚀 ~ file: array_method.js ~ line 64 ~ spliceExample", spliceExample);
+// // unshift
+// let unshiftExample = ['apple', 'mango', 'orange', 'banana'];
+// shiftExample.unshift("avocado");
+// // console.log(unshiftExample);
+// console.log("🚀 ~ file: array_method.js ~ line 57 ~ unshiftExample", unshiftExample);
 
 
-// slice
-let sliceExample = ['apple', 'mango', 'orange', 'banana'];
-let newSliceArray = sliceExample.slice(1, 3);
-// console.log("slice Example:", newSliceArray);
-console.log("🚀 ~ file: array_method.js ~ line 71 ~ SliceExample", newSliceArray);
+// // splice
+// let spliceExample = ['apple', 'mango', 'orange'];
+// spliceExample.splice(1, 0, 'avocado', 'pears');
+// // console.log("spliceExample:", spliceExample);
+// console.log("🚀 ~ file: array_method.js ~ line 64 ~ spliceExample", spliceExample);
 
 
-// delete
-let deleteExample = ['apple', 'mango', 'orange', 'banana'];
-delete deleteExample[0];
-console.log("🚀 ~ file: array_method.js ~ line 78 ~ deleteExample", deleteExample);
+// // slice
+// let sliceExample = ['apple', 'mango', 'orange', 'banana'];
+// let newSliceArray = sliceExample.slice(1, 3);
+// // console.log("slice Example:", newSliceArray);
+// console.log("🚀 ~ file: array_method.js ~ line 71 ~ SliceExample", newSliceArray);
 
 
-/*========================== forEach Loop Example ==============================*/
+// // delete
+// let deleteExample = ['apple', 'mango', 'orange', 'banana'];
+// delete deleteExample[0];
+// console.log("🚀 ~ file: array_method.js ~ line 78 ~ deleteExample", deleteExample);
 
-const loopFunction = (value, index) => {
-    console.log("Key: ", index);
-    console.log("value: ", value);
-}
 
-// sliceExample.forEach(loopFunction);
+// /*========================== forEach Loop Example ==============================*/
 
-// sliceExample.forEach((value, index) => {
+// const loopFunction = (value, index) => {
 //     console.log("Key: ", index);
 //     console.log("value: ", value);
-// })
+// }
 
-/*=====================================================*/
+// // sliceExample.forEach(loopFunction);
 
-// Map example
+// // sliceExample.forEach((value, index) => {
+// //     console.log("Key: ", index);
+// //     console.log("value: ", value);
+// // })
 
-// let fruits = ['apple', 'banana', 'mango', 'avocado']
+// /*=====================================================*/
 
+// // Map example
+
+// // let fruits = ['apple', 'banana', 'mango', 'avocado']
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// let newNumbers = numbers.map((value, index) => {
+//     return value * 2;
+// });
+
+// console.log("🚀 ~file: array_method.js ~line 101 ~numbers", numbers);
+// console.log("🚀 ~file: array_method.js ~line 103 ~numbers", newNumbers);
+
+
+// // filter example
+// let agesArray = [15, 20, 30];
+
+// let aboveTwenty = agesArray.filter((age) => {
+//     return age > 20;
+// });
+
+// console.log("🚀 ~ file: array_method.js ~ line 113 ~ agesArray", agesArray);
+// console.log("🚀 ~ file: array_method.js ~ line 116 ~ aboveTwenty ~ aboveTwenty",
+//     aboveTwenty);
+
+// let person = {
+//     name: "john",
+//     age: 30,
+//     address: "kathmandu",
+// }
+
+// delete person.address;
+// console.log("🚀 ~ file: array_method.js ~ line 129 ~ person", person);
+
+
+// // iterators
+// let countryArray = ["Nepal", "India", "china", "Japan"];
+
+// for (let country of countryArray) {
+//     console.log("file: array_method.js ~ line 136 ~ country", country);
+// }
+
+// let objectExample = {
+//     name: "John",
+//     age: 30,
+//     address: "kathmandu",
+// }
+
+// for (let obj in objectExample) {
+//     console.log("🚀 ~ file: array_method.js ~ line 146 ~ obj", objectExample[obj]);
+// }
+
+// console.log(object.keys(objectExample));
+// console.log(object.values(objectExample));
+
+
+
+/*======================== Array Iterators Practice =========================*/
+
+// forEach Example
+let fruits = ["apple", "banana", "avocado", "orange", "kiwi"];
+
+fruits.forEach((value, index) => {
+    console.log(value);
+})
+
+
+// Map Example 1
 let numbers = [1, 2, 3, 4, 5];
 
 let newNumbers = numbers.map((value, index) => {
     return value * 2;
 });
 
-console.log("🚀 ~file: array_method.js ~line 101 ~numbers", numbers);
-console.log("🚀 ~file: array_method.js ~line 103 ~numbers", newNumbers);
+console.log("The numbers are:", numbers);
+
+console.log("The newNumbers are:", newNumbers);
 
 
-// filter example
-let agesArray = [15, 20, 30];
+// Map Example 2
+let names = ["Ram", "Hari", "Kumar", "Shyam"];
+console.log(names);
 
-let aboveTwenty = agesArray.filter((age) => {
-    return age > 20;
+let upperCaseName = names.map((value, index) => {
+    return value.toUpperCase();
 });
 
-console.log("🚀 ~ file: array_method.js ~ line 113 ~ agesArray", agesArray);
-console.log("🚀 ~ file: array_method.js ~ line 116 ~ aboveTwenty ~ aboveTwenty",
-    aboveTwenty);
+console.log(upperCaseName);
 
+
+// Filter Example
+let agesArray = [15, 20, 30];
+
+let aboveTwenty = agesArray.filter((value, index) => {
+    return value > 20;
+});
+
+console.log("The initial arrays are:", agesArray);
+console.log("The new arrays are:", aboveTwenty);
+
+
+// for Example
+let arr = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+// delete[object case]
 let person = {
-    name: "john",
+    name: "Ram",
     age: 30,
-    address: "kathmandu",
+    address: "Kathmandu"
 }
 
 delete person.address;
-console.log("🚀 ~ file: array_method.js ~ line 129 ~ person", person);
+console.log("object property after delete:", person);
 
 
 // iterators
 let countryArray = ["Nepal", "India", "china", "Japan"];
 
-for (let country of countryArray) {
+for (country of countryArray) {
     console.log("file: array_method.js ~ line 136 ~ country", country);
 }
 
@@ -149,3 +233,4 @@ for (let obj in objectExample) {
 
 // console.log(object.keys(objectExample));
 // console.log(object.values(objectExample));
+
