@@ -127,30 +127,33 @@ const request = require('request');
 //     "status": "success" 
 // }
 
-// real case scenario example of promise using [request]
-const getDogApiV1 = () => {
-    return new Promise((resolve, reject) => {
-        request("https://dog.ceo/api/breeds/image/random", (error, response, body) => {
-            if (error) {
-                reject(error);
-            }
-            resolve(body);
-
-            // console.log("error:", error);
-            // // console.log("response:", response);
-            // console.log("body:", body);
-        });
-    });
-};
 
 
-getDogApiV1()
-    .then((result) => {
-        console.log("Dog api v1:", result);
-    })
-    .catch((error) => {
-        console.log("Error:", error);
-    });
+
+// // real case scenario example of promise using [request]
+// const getDogApiV1 = () => {
+//     return new Promise((resolve, reject) => {
+//         request("https://dog.ceo/api/breeds/image/random", (error, response, body) => {
+//             if (error) {
+//                 reject(error);
+//             }
+//             resolve(body);
+
+//             // console.log("error:", error);
+//             // // console.log("response:", response);
+//             // console.log("body:", body);
+//         });
+//     });
+// };
+
+
+// getDogApiV1()
+//     .then((result) => {
+//         console.log("Dog api v1:", result);
+//     })
+//     .catch((error) => {
+//         console.log("Error:", error);
+//     });
 
 
 

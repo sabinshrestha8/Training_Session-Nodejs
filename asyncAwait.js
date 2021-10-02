@@ -84,15 +84,11 @@ updateUser(1, "Hari");
 
 const getAllPromise = async () => {
     try {
-        // const user1 = await getUserById(1);
-        // const user2 = await getUserById(2);
-        // console.log([user1, user2]);
         const user1Promise = await getUserById(1);
         const user2Promise = await getUserById(2);
-        const result = await Promise.all([user1Promise, user2Promise])
-        // console.log(result);
+        const [user1, user2] = await Promise.all([user1Promise, user2Promise])
 
-        /*=====Destructing Assignment=====*/
+        /*=====Array Destructuring =====*/
         
         // const detail = {
         //     name: "hello",
@@ -104,13 +100,8 @@ const getAllPromise = async () => {
 
         /*================================*/
 
-        const user1 = result[0];
         console.log("🚀 ~ file: asyncAwait.js ~ line 95 ~ obj", user1);
-        const user2 = result[1];
         console.log("🚀 ~ file: asyncAwait.js ~ line 97 ~ obj", user2);
-
-        // console.log(result[0]);
-        // console.log(result[1]);
 
     } catch (error) {
         console.log("Error:", error);
