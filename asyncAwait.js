@@ -19,6 +19,9 @@ const getUserById = (id) => {
         const result = users.find((user, index) => {
             return user.id === id;
         });
+        // if (!result) {
+        //     reject("User cannot be empty");
+        // }
         // console.log(result);
         resolve(result);
     });
@@ -29,22 +32,43 @@ const updateName = (user, name) => {
     // console.log("Before change:", user);
     return new Promise((resolve, reject) => {
         if (!user) {
-            reject("User cannot be empty");
+            reject("User 2 cannot be empty");
         }
         user.name = name;
         resolve(user);
     });
 };
 
+// // Promise chaining
+// getUserById(1)
+//     .then((result) => {
+//         console.log("original user value:", result);
+//         return updateName(result, "Hari")
+//     })
+//     .then((result) => {
+//         console.log("new updated result:", result);
+//     })
+//     .catch((err) => {
+//         console.log("Error:", err);
+//     });
 
-getUserById(3)
-    .then((result) => {
-        console.log("original user value:", result);
-        return updateName(result, "Hari")
-    })
-    .then((result) => {
-        console.log("new updated result:", result);
-    })
-    .catch((err) => {
-        console.log("Error:", err);
-    });
+
+// // Anonymous function
+// console.log((() => {
+//     return "hello world";
+// })());
+
+
+// (() => {
+//     const user = await getUserById(1);
+//     console.log(user);
+// })();
+
+
+// using Async-Await in promise
+const updateUser = async (id, name) => {
+    const user = await getUserById(1);
+    console.log(user);
+};
+
+updateUser(1, "Hari");
